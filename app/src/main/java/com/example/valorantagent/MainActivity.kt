@@ -57,14 +57,5 @@ class MainActivity : AppCompatActivity() {
         val listAgentAdapter = ListAgentAdapter(list)
         rvAgent.adapter = listAgentAdapter
 
-        listAgentAdapter.setOnItemClickCallback(object : ListAgentAdapter.OnItemClickCallback {
-            override fun onItemClicked(data: Agent) {
-                showSelectedAgent(data)
-            }
-        })
-    }
-
-    private fun showSelectedAgent(agent: Agent) {
-        Toast.makeText(this, "Kamu memilih " + agent.name, Toast.LENGTH_SHORT).show()
     }
 }

@@ -11,11 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 class ListAgentAdapter(private val listAgent: ArrayList<Agent>): RecyclerView.Adapter<ListAgentAdapter.ListViewHolder>() {
-    private lateinit var onItemClickCallback: OnItemClickCallback
-
-    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_agent, parent, false)
@@ -23,7 +18,6 @@ class ListAgentAdapter(private val listAgent: ArrayList<Agent>): RecyclerView.Ad
     }
 
     override fun getItemCount(): Int = listAgent.size
-
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val (name, description, icon) = listAgent[position]
@@ -45,7 +39,4 @@ class ListAgentAdapter(private val listAgent: ArrayList<Agent>): RecyclerView.Ad
         val tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
     }
 
-    interface OnItemClickCallback {
-        fun onItemClicked(data: Agent)
-    }
 }
