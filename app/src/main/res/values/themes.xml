@@ -3,6 +3,9 @@
     <style name="Base.Theme.ValorantAgent" parent="Theme.Material3.DayNight">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/lightred</item>
+        <item name="colorPrimaryVariant">@color/lightred</item>
+        <item name="colorOnPrimary">@color/lightred</item>
     </style>
 
     <style name="Theme.ValorantAgent" parent="Base.Theme.ValorantAgent" />

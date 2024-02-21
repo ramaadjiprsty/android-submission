@@ -1,6 +1,8 @@
 package com.example.valorantagent
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar!!.setBackgroundDrawable(ColorDrawable(Color.parseColor("#FD4556")))
 
         binding.rvAgent.setHasFixedSize(true)
 
@@ -47,9 +50,10 @@ class MainActivity : AppCompatActivity() {
         val dataName = resources.getStringArray(R.array.data_agent)
         val dataDescription = resources.getStringArray(R.array.agent_description)
         val dataPhoto = resources.getStringArray(R.array.agent_icon)
+        val dataAbilities = resources.getStringArray(R.array.agent_abilites)
         val listAgent = ArrayList<Agent>()
         for (i in dataName.indices) {
-            val agent = Agent(dataName[i], dataDescription[i], dataPhoto[i])
+            val agent = Agent(dataName[i], dataDescription[i], dataPhoto[i], dataAbilities[i])
             listAgent.add(agent)
         }
         return listAgent

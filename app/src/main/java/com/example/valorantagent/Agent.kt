@@ -9,15 +9,15 @@ import kotlinx.parcelize.Parcelize
 data class Agent(
     val name: String?,
     val description: String?,
-    val icon: String?
+    val icon: String?,
+    val abilities: String?
 ) : Parcelable {
-
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString(),
+        parcel.readString(),
         parcel.readString()
-    ) {
-    }
+    )
 
     companion object : Parceler<Agent> {
 
@@ -25,6 +25,7 @@ data class Agent(
             parcel.writeString(name)
             parcel.writeString(description)
             parcel.writeString(icon)
+            parcel.writeString(abilities)
         }
 
         override fun create(parcel: Parcel): Agent {
@@ -32,3 +33,4 @@ data class Agent(
         }
     }
 }
+

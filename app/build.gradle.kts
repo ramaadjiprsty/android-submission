@@ -7,7 +7,10 @@ plugins {
 android {
     namespace = "com.example.valorantagent"
     compileSdk = 34
-    buildFeatures { viewBinding = true }
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
 
     defaultConfig {
         applicationId = "com.example.valorantagent"

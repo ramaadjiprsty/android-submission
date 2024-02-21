@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary">#FF0000</color>
+    <color name="lightred">#FD4556</color>
+    <color name="azul">#BD3944</color>
+    <color name="cupid">#FFFBF5</color>
 </resources>

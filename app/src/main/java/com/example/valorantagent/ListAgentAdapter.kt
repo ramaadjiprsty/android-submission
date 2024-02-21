@@ -15,14 +15,13 @@ class ListAgentAdapter(private val listAgent: ArrayList<Agent>): RecyclerView.Ad
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         val binding =  ItemRowAgentBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-//        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_agent, parent, false)
         return ListViewHolder(binding)
     }
 
     override fun getItemCount(): Int = listAgent.size
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        val (name, description, icon) = listAgent[position]
+        val (name, description, icon, abilites) = listAgent[position]
         Glide.with(holder.itemView.context)
             .load(icon)
                 .into(holder.binding.imgAgentIcon)
@@ -36,9 +35,7 @@ class ListAgentAdapter(private val listAgent: ArrayList<Agent>): RecyclerView.Ad
     }
 
     class ListViewHolder(var binding: ItemRowAgentBinding) : RecyclerView.ViewHolder(binding.root) {
-//        val imgPhoto: ImageView = itemView.findViewById(R.id.img_agent_icon)
-//        val tvName: TextView = itemView.findViewById(R.id.tv_item_name)
-//        val tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
+
     }
 
 }

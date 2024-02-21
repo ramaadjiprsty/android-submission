@@ -3,5 +3,7 @@
     <style name="Base.Theme.ValorantAgent" parent="Theme.Material3.DayNight">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/lightred</item>
+        <item name="colorPrimaryVariant">@color/lightred</item>
     </style>
 </resources>
