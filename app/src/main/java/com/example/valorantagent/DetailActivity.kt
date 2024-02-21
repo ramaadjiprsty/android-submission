@@ -31,14 +31,11 @@ class DetailActivity : AppCompatActivity() {
 
         if (dataAgent != null) {
             tvDetailName.text = dataAgent.name
-        }
-        if (dataAgent != null) {
             tvDetailDescription.text = dataAgent.description
-        }
-        if (dataAgent != null) {
             Glide.with(this)
                 .load(dataAgent.icon)
                 .into(ivDetailPhoto)
-        };
+        }
+
     }
 }
