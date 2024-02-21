@@ -9,12 +9,14 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.valorantagent.databinding.ItemRowAgentBinding
 
 class ListAgentAdapter(private val listAgent: ArrayList<Agent>): RecyclerView.Adapter<ListAgentAdapter.ListViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_agent, parent, false)
-        return ListViewHolder(view)
+        val binding =  ItemRowAgentBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+//        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_agent, parent, false)
+        return ListViewHolder(binding)
     }
 
     override fun getItemCount(): Int = listAgent.size
@@ -23,9 +25,9 @@ class ListAgentAdapter(private val listAgent: ArrayList<Agent>): RecyclerView.Ad
         val (name, description, icon) = listAgent[position]
         Glide.with(holder.itemView.context)
             .load(icon)
-                .into(holder.imgPhoto)
-        holder.tvName.text = name
-        holder.tvDescription.text = description
+                .into(holder.binding.imgAgentIcon)
+        holder.binding.tvItemName.text = name
+        holder.binding.tvItemDescription.text = description
         holder.itemView.setOnClickListener {
             val intentDetail = Intent(holder.itemView.context, DetailActivity::class.java)
             intentDetail.putExtra("extra_detail", listAgent[holder.adapterPosition])
@@ -33,10 +35,10 @@ class ListAgentAdapter(private val listAgent: ArrayList<Agent>): RecyclerView.Ad
         }
     }
 
-    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val imgPhoto: ImageView = itemView.findViewById(R.id.img_agent_icon)
-        val tvName: TextView = itemView.findViewById(R.id.tv_item_name)
-        val tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
+    class ListViewHolder(var binding: ItemRowAgentBinding) : RecyclerView.ViewHolder(binding.root) {
+//        val imgPhoto: ImageView = itemView.findViewById(R.id.img_agent_icon)
+//        val tvName: TextView = itemView.findViewById(R.id.tv_item_name)
+//        val tvDescription: TextView = itemView.findViewById(R.id.tv_item_description)
     }
 
 }

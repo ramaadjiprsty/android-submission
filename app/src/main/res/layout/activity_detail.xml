@@ -8,23 +8,26 @@
 
     <ImageView
         android:id="@+id/img_agent_big_icon"
-        android:layout_width="300dp"
-        android:layout_height="400dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.1"
+        tools:src="@tools:sample/avatars"/>
 
     <TextView
         android:id="@+id/tv_agent_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/img_agent_big_icon"
         app:layout_constraintStart_toStartOf="@+id/img_agent_big_icon"
         app:layout_constraintTop_toBottomOf="@+id/img_agent_big_icon"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
+        tools:text="@string/agent_name" />
 
     <TextView
         android:id="@+id/tv_description_title"

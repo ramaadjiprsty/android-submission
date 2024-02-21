@@ -8,17 +8,19 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.valorantagent.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var rvAgent: RecyclerView
     private val list = ArrayList<Agent>()
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        rvAgent = findViewById(R.id.rv_agent)
-        rvAgent.setHasFixedSize(true)
+        binding.rvAgent.setHasFixedSize(true)
 
         list.addAll(listOfAgent)
         showRecyclerList()
@@ -53,9 +55,9 @@ class MainActivity : AppCompatActivity() {
         return listAgent
     }
     private fun showRecyclerList() {
-        rvAgent.layoutManager = LinearLayoutManager(this)
+        binding.rvAgent.layoutManager = LinearLayoutManager(this)
         val listAgentAdapter = ListAgentAdapter(list)
-        rvAgent.adapter = listAgentAdapter
+        binding.rvAgent.adapter = listAgentAdapter
 
     }
 }

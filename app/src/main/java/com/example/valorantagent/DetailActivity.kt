@@ -6,9 +6,10 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
+import com.example.valorantagent.databinding.ActivityMainBinding
+
 
 class DetailActivity : AppCompatActivity() {
-
     companion object {
         const val EXTRA_DETAIL = "extra_detail"
     }
