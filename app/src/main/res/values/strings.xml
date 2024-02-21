@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Valorant Agent</string>
+    <string name="agent_name">Agent Names</string>
+    <string name="description">Description</string>
+    <string name="about">About</string>
+    <string name="about_name">Rama Adji Prasetyo</string>
+    <string name="about_email">ramaadjiprsty@gmail.com</string>
+
+    <string-array name="data_agent">
+        <item>KAY/O</item>
+        <item>Sova</item>
+        <item>Chamber</item>
+        <item>Sage</item>
+        <item>Jett</item>
+        <item>Omen</item>
+        <item>Brimstone</item>
+        <item>Skye</item>
+        <item>Neon</item>
+        <item>Astra</item>
+    </string-array>
+
+    <string-array name="agent_description">
+        <item>KAYO is a machine of war built for a single purpose: neutralizing radiants. His power to Suppress enemy abilities dismantles his opponents capacity to fight back, securing him and his allies the ultimate edge.</item>
+        <item>Born from the eternal winter of Russia tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide.</item>
+        <item>Well-dressed and well-armed, French weapons designer Chamber expels aggressors with deadly precision. He leverages his custom arsenal to hold the line and pick off enemies from afar, with a contingency built for every plan.</item>
+        <item>The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight.</item>
+        <item>Representing her home country of South Korea, Jett agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.</item>
+        <item>A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold as his foe scrambles to learn where he might strike next.</item>
+        <item>Joining from the U.S.A., Brimstone orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.</item>
+        <item>Hailing from Australia, Skye and her band of beasts trail-blaze the way through hostile territory. With her creations hampering the enemy, and her power to heal others, the team is strongest and safest by Skye’s side.</item>
+        <item>Filipino Agent Neon surges forward at shocking speeds, discharging bursts of bioelectric radiance as fast as her body generates it. She races ahead to catch enemies off guard, then strikes them down quicker than lightning.</item>
+        <item>Ghanaian Agent Astra harnesses the energies of the cosmos to reshape battlefields to her whim. With full command of her astral form and a talent for deep strategic foresight, shes always eons ahead of her enemy next move.</item>
+    </string-array>
+
+    <string-array name="agent_icon">
+        <item>https://static.wikia.nocookie.net/valorant/images/f/f0/KAYO_icon.png/revision/latest?cb=20230523180711</item> <!--kayo-->
+        <item>https://static.wikia.nocookie.net/valorant/images/4/49/Sova_icon.png/revision/latest?cb=20230523180933</item> <!--sova-->
+        <item>https://static.wikia.nocookie.net/valorant/images/0/09/Chamber_icon.png/revision/latest?cb=20230523180616</item> <!--chamber-->
+        <item>https://static.wikia.nocookie.net/valorant/images/7/74/Sage_icon.png/revision/latest?cb=20230606161159</item> <!--sage-->
+        <item>https://static.wikia.nocookie.net/valorant/images/3/35/Jett_icon.png/revision/latest?cb=20230909031447</item> <!--jett-->
+        <item>https://static.wikia.nocookie.net/valorant/images/b/b0/Omen_icon.png/revision/latest?cb=20230523180801</item> <!--omen-->
+        <item>https://static.wikia.nocookie.net/valorant/images/4/4d/Brimstone_icon.png/revision/latest?cb=20230523180558</item> <!--brimstone-->
+        <item>https://static.wikia.nocookie.net/valorant/images/3/33/Skye_icon.png/revision/latest?cb=20230606161546</item> <!--skye-->
+        <item>https://static.wikia.nocookie.net/valorant/images/d/d0/Neon_icon.png/revision/latest?cb=20230523180744</item> <!--neon-->
+        <item>https://static.wikia.nocookie.net/valorant/images/0/08/Astra_icon.png/revision/latest?cb=20230523180525</item> <!--astra-->
+    </string-array>
+
+</resources>
