@@ -10,5 +10,6 @@ class AboutPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about_page)
         supportActionBar!!.setBackgroundDrawable(ColorDrawable(Color.parseColor("#FD4556")))
+        supportActionBar?.title = "About"
     }
 }

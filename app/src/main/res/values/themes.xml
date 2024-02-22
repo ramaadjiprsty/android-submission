@@ -9,4 +9,10 @@
     </style>
 
     <style name="Theme.ValorantAgent" parent="Base.Theme.ValorantAgent" />
+    <style name="Theme.App.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/icon_valorant</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.ValorantAgent</item>
+    </style>
+
 </resources>
