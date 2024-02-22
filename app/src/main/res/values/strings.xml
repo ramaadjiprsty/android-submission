@@ -1,11 +1,12 @@
 <resources>
     <string name="app_name">Valorant Agent</string>
     <string name="agent_name">Agent Names</string>
-    <string name="description">Description</string>
+    <string name="description">Biography</string>
     <string name="about">About</string>
     <string name="about_name">Rama Adji Prasetyo</string>
     <string name="about_email">ramaadjiprsty@gmail.com</string>
     <string name="abilites_title">Ability</string>
+    <string name="action_share">Action Share</string>
 
     <string-array name="data_agent">
         <item>KAY/O</item>
